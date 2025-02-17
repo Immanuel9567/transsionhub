@@ -25,15 +25,28 @@ h1::first-letter {
 	color: #F1A8ff !important;
     text-decoration: none;
     text-shadow: 2px 2px 5px rgba(255, 87, 51, 0.8);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     background-color: rgb(54, 54, 54);
     padding: 1px 2px;
-    border-radius: 6px;
+    border-radius: 5px;
     display: inline-block;
+    position: relative;
+}
+
+.copy-icon {
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 16px;
+    color: #007BFF; /* Blue */
+    user-select: none;
+}
+
+.copy-icon:hover {
+    color: #0056b3; /* Darker blue */
 }
 
 p {
-	padding: 10px;
+	padding: 5px;
 }
 
 a {
@@ -180,5 +193,30 @@ h1, h2, h3 {
 h1 {
     font-size: clamp(1.8rem, 5vw, 3rem);
     text-align: center;
+}
+
+.faq-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 2px solid #F1A8FF;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: #F1A8FF;
+    color: #333232;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    background-color: #202020; /* Light gray */
+    color: #b3b0b0;
+    padding: 8px;
 }
 

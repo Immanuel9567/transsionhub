@@ -33,18 +33,6 @@ h1::first-letter {
     position: relative;
 }
 
-.copy-icon {
-    cursor: pointer;
-    margin-left: 8px;
-    font-size: 16px;
-    color: #007BFF; /* Blue */
-    user-select: none;
-}
-
-.copy-icon:hover {
-    color: #0056b3; /* Darker blue */
-}
-
 p {
 	padding: 5px;
 }

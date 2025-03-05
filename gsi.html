@@ -20,19 +20,15 @@
         <h1>Welcome!</h1>
         <script src="/files/js/script.js"></script>
         <button onclick="showPopup()" class="btn-ghost">Warning!</button>
-        <p>Please Note the GSIs (Generic System Images) are treble based and support almost all devices. Stability is not guaranteed, keep testing until you are comfortable/stable.</p>
+        <p>Please Note the GSIs (Generic System Images) are treble based and support most devices. Stability is not guaranteed, keep testing until you are comfortable/stable.</p>
         
-        <div class="resource-center">
-                <div class="resource-item">
-                    <img src="/files/images/povaflex.jpg" alt="Custom Pova Power">
-        </div>
-        
-        For GSI ROM links, refer to <a href="https://github.com/phhusson/treble_experimentations/wiki/Generic-System-Image-%28GSI%29-list" class="btn-ghost">this Page</a>
+<h1>For GSI ROM links, refer to <a href="https://github.com/phhusson/treble_experimentations/wiki/Generic-System-Image-%28GSI%29-list" class="btn-ghost">this Page</a></h1>
         
         <h1>Tips and Guides</h1>
-        <p>To Hide Phh Settings via Terminal preferably Termux, ROOT IS REQUIRED <a class="colored">su -c "pm disable me.phh.treble.app/.TopLevelSettingsActivity"</a></p>
-        <p>To Show Phh Settings ROOT IS REQUIRED <a class="colored">su -c "pm enable me.phh.treble.app/.TopLevelSettingsActivity"</a></p>
-        <p>In case the prop doesn't already exist, use Terminal to set this prop to fix laggy UI (This might result in high battery consumption and constant warming of device). Run "su" in terminal and run <a class="colored">setprop debug.sf.disable_backpressure 1"</a> and Reboot</p>
+        <p>To Hide Phh Settings via Terminal preferably Termux, ROOT IS REQUIRED | <a class="colored">su -c "pm disable me.phh.treble.app/.TopLevelSettingsActivity"</a></p>
+        <p>To Show Phh Settings, ROOT IS REQUIRED | <a class="colored">su -c "pm enable me.phh.treble.app/.TopLevelSettingsActivity"</a></p>
+        <p>In case the prop doesn't already exist, use Terminal to set it. A possibke fix for laggy UI on A13+ systems (This might result in consistently high battery temps and consumption).</p>
+        <p>Run "su" in terminal and run <a class="colored">setprop debug.sf.disable_backpressure 1"</a> and Reboot</p>
         
         <nav class="bottom-nav">
             <a href="custom.html" class="nav-item">Custom ROM/Recovery Section</a>

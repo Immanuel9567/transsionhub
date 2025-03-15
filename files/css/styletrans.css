@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    color: #F9E8FC;
-    background-color: #000000;
+    color: white;
+    background: linear-gradient(135deg, #007bff,  #00cc66);
     margin: 0 auto;
     max-width: 100%;
     font: 1.3em/1.65 sans-serif;
@@ -17,8 +17,14 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2, h3 {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 h1::first-letter {
-	color: #F1A8FF;
+	color: #18f587;
+    font-weight: bold;
 }
 
 .colored {
@@ -57,11 +63,12 @@ img {
 }
 
 .btn-ghost {
-	background-color: #F1A8FF;
-	color: #000000;
+	background: linear-gradient(135deg, #5fb865, #007bff);
+	color: white;
 	padding: 5px 5px;
-	border: 1px solid #F1A8FF;
+	border: none;
 	border-radius: 9px;
+    transition: 0.3s;
 	font-size: 1rem;
 	cursor: pointer;
     text-decoration: none;
@@ -70,7 +77,8 @@ img {
 }
 
 .btn-ghost:hover {
-	background-color: #F2D9F7;
+	background: #007bff;
+    box-shadow: 0 0 10px #00cc66;
 }
 
 .center-text {
@@ -156,7 +164,7 @@ h1, h2, h3 {
 }
 
 .nav-item {
-    color: #F1A8FF;
+    color: #5fb865;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;

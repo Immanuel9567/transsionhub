@@ -22,13 +22,28 @@
         <button onclick="showPopup()" class="btn-ghost">Warning!</button>
         <p>Please Note the GSIs (Generic System Images) are treble based and support most devices. Stability is not guaranteed, keep testing until you are comfortable/stable.</p>
         
-<h1>For GSI ROM links, refer to <a href="https://github.com/phhusson/treble_experimentations/wiki/Generic-System-Image-%28GSI%29-list" class="btn-ghost">this Page</a></h1>
-        
+        <h1>For GSI ROM links, refer to <a href="https://github.com/phhusson/treble_experimentations/wiki/Generic-System-Image-%28GSI%29-list" class="btn-ghost">this Page</a></h1>
+
+
+        <h1>Common Short-hand terms in GSI management</h1>
+        <ul>
+            <li>b = a/b</li> 
+            <li>v = vanilla (no Gapps)</li>
+            <li>g= Gapps</li>
+            <li>n = no root</li> 
+            <li>s = with root</li>
+            <li>Slim = Only core Gapps included</li>
+        </ul>
         <h1>Tips and Guides</h1>
-        <p>To Hide Phh Settings via Terminal preferably Termux, ROOT IS REQUIRED | <a class="colored">su -c "pm disable me.phh.treble.app/.TopLevelSettingsActivity"</a></p>
-        <p>To Show Phh Settings, ROOT IS REQUIRED | <a class="colored">su -c "pm enable me.phh.treble.app/.TopLevelSettingsActivity"</a></p>
-        <p>In case the prop doesn't already exist, use Terminal to set it. A possibke fix for laggy UI on A13+ systems (This might result in consistently high battery temps and consumption).</p>
-        <p>Run "su" in terminal and run <a class="colored">setprop debug.sf.disable_backpressure 1"</a> and Reboot</p>
+        <ul>
+            <li>To Hide Phh Settings via Terminal preferably Termux, ROOT IS REQUIRED <a class="colored">su -c "pm disable me.phh.treble.app/.TopLevelSettingsActivity"</a></li>
+            <li>To Show Phh Settings, ROOT IS REQUIRED <a class="colored">su -c "pm enable me.phh.treble.app/.TopLevelSettingsActivity"</a></li>
+            <li>In case the prop doesn't already exist, use Terminal to set it. A possible fix for laggy UI on A13+ systems (This may result in consistently high battery temps and consumption). Run "su" in terminal and run <a class="colored">setprop debug.sf.disable_backpressure 1"</a> and Reboot</li>
+            <li>Run these commands in case you face insufficient storage while re-partitioning/flashing system.img: <a class="colored">fastboot delete-logical-partition system_ext</a> <a class="colored">fastboot delete-logical-partition system_ext_a</a> <a class="colored">fastboot delete-logical-partition system_ext_b</a> <a class="colored">fastboot delete-logical-partition product</a> <a class="colored">fastboot delete-logical-partition product_a</a> <a class="colored">fastboot delete-logical-partition product_b</a></li>
+            <li>If you wish to remain on a GSI booted via DSU and want it to survive a reboot, run this command: <a class="colored">adb shell gsi_tool enable</a> and if you wish to revert, run: <a class="colored">adb shell gsi_tool disable</a></li>
+        </ul>
+        
+        <p>Stay tuned for more GSI related tips and Updates</p>
         
         <nav class="bottom-nav">
             <a href="custom.html" class="nav-item">Custom ROM/Recovery Section</a>

@@ -4,7 +4,7 @@ html {
 
 body {
     color: white;
-    background: linear-gradient(135deg, #007bff,  #00cc66);
+    background: linear-gradient(180deg, #145192,  #0e7240);
     margin: 0 auto;
     max-width: 100%;
     font: 1.3em/1.65 sans-serif;
@@ -12,7 +12,7 @@ body {
     padding: 10px;
     display: inline-block;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: start;
     overflow-x: hidden;
 }
@@ -20,6 +20,7 @@ body {
 h1, h2, h3 {
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
 }
 
 h1::first-letter {
@@ -28,11 +29,11 @@ h1::first-letter {
 }
 
 .colored {
-	color: #F1A8ff !important;
+	color: #18f587 !important;
     text-decoration: none;
-    text-shadow: 2px 2px 5px rgba(255, 87, 51, 0.8);
+    text-shadow: 2px 2px 5px rgba(146, 146, 146, 0.8);
     font-family: monospace;
-    background-color: rgb(54, 54, 54);
+    background-color: rgba(54, 54, 54, 0.678);
     padding: 1px 2px;
     border-radius: 5px;
     display: inline-block;

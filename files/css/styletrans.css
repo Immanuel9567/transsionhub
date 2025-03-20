@@ -22,7 +22,7 @@ body {
     gap: 15px;
     justify-content: start;
     overflow-x: hidden;
-    overscroll-behavior-y: contain;
+    overscroll-behavior-y: auto;
     min-height: 100vh;
     background: linear-gradient(to bottom, #145192, #0e7240);
 }

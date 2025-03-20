@@ -30,7 +30,11 @@ h1::first-letter {
 }
 
 .colored {
-	color: #18f587 !important;
+	color: #18f587;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     text-decoration: none;
     text-shadow: 2px 2px 5px rgba(146, 146, 146, 0.8);
     font-family: monospace;
@@ -39,6 +43,14 @@ h1::first-letter {
     border-radius: 5px;
     display: inline-block;
     position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .colored {
+        white-space: normal; /* Allows text to wrap */
+        word-wrap: break-word; /* Ensures long words break properly */
+        text-align: center;
+    }
 }
 
 p {

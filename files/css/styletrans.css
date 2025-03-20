@@ -5,6 +5,7 @@ html {
 body {
     color: white;
     background: linear-gradient(180deg, #145192,  #0e7240);
+    background-attachment: fixed;
     margin: 0 auto;
     max-width: 100%;
     font: 1.3em/1.65 sans-serif;

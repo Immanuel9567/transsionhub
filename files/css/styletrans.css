@@ -23,6 +23,8 @@ body {
     justify-content: start;
     overflow-x: hidden;
     overscroll-behavior-y: contain;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #002366, #008000);
 }
 
 h1, h2, h3 {

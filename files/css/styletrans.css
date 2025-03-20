@@ -2,6 +2,12 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overscroll-behavior: none; /* Prevents weird scrolling effects */
+    background-color: #000; /* Match the site's background */
+}
+
 body {
     color: white;
     background: linear-gradient(180deg, #145192,  #0e7240);
@@ -16,6 +22,7 @@ body {
     gap: 15px;
     justify-content: start;
     overflow-x: hidden;
+    overscroll-behavior-y: contain;
 }
 
 h1, h2, h3 {

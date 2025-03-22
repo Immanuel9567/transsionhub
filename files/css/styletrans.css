@@ -45,7 +45,7 @@ h1::first-letter {
     padding: 1px 2px;
     border-radius: 5px;
     display: inline-block;
-    position: relative;
+    position:relative;
 }
 
 @media screen and (max-width: 768px) {
